@@ -189,72 +189,74 @@ def getDate(days = 0):
         minusDays -= today.day
         minusMonths += 1
 
-sampleBook = RecipeBook([Recipe("Pork Chops", RecipeCatagory.pork, True, yesterday),
-                         Recipe("Spaghetti", RecipeCatagory.groundBeef),
-                         Recipe("Baked Lasagna", RecipeCatagory.groundBeef),
-                         Recipe("Mushroom Meatballs", RecipeCatagory.groundBeef, True, lastUsed = today),
-                         Recipe("Sloppy Joes", RecipeCatagory.groundBeef, lastUsed = today),
-                         Recipe("Beef Ragu with Ravioli", RecipeCatagory.groundBeef),
-                         Recipe("Hamburger Cutlets", RecipeCatagory.groundBeef, True),
-                         Recipe("Chili con Carne", RecipeCatagory.groundBeef),
-                         Recipe("Spinach Pesto Manicotti", RecipeCatagory.groundBeef),
-                         Recipe("Tomato Meatloaf", RecipeCatagory.groundBeef, lastUsed = today),
-                         Recipe("Sloppy BBQ Joes", RecipeCatagory.groundBeef),
-                         Recipe("Meatball Garden Skillet", RecipeCatagory.groundBeef),
-                         Recipe("Sicilian Meat Roll", RecipeCatagory.groundBeef),
-                         Recipe("Mommy's Surprise", RecipeCatagory.groundBeef),
-                         Recipe("One-Pot Pasta", RecipeCatagory.groundBeef),
-                         Recipe("Beef & Macaroni Casserole", RecipeCatagory.groundBeef),
-                         Recipe("Somethin' Good", RecipeCatagory.groundBeef),
-                         Recipe("Chicken with Cider and Bacon Sauce", RecipeCatagory.groundBeef),
-                         Recipe("Goat Cheese Stuffed Chicken Breasts", RecipeCatagory.poultry, True),
-                         Recipe("Tandoori-Style Chicken", RecipeCatagory.poultry),
-                         Recipe("Prosciutto Chicken Cacciatore", RecipeCatagory.poultry),
-                         Recipe("Mexican Party Wings", RecipeCatagory.poultry),
-                         Recipe("Chicken in a Skillet"),
-                         Recipe("Turkey with a Twist"),
-                         Recipe("Stuffed Chicken Rolls", lastUsed = lastWeek),
-                         Recipe("Chicken Tetrazzini", favorite = True, lastUsed = lastMonth),
-                         Recipe("Chicken au Poivre"),
-                         Recipe("Baked Chicken with Orzo", favorite = True),
-                         Recipe("Chicken-Rice Casserole", lastUsed = lastMonth),
-                         Recipe("Asian Turkey Lettuce Wraps", favorite = True, lastUsed = yesterday),
-                         Recipe("Cornish Hens A'L'Orange", RecipeCatagory.poultry, lastUsed = today),
-                         Recipe("Pork Cacciatore", favorite = True),
-                         Recipe("Pork Stew"),
-                         Recipe("Pork Stew in Green Salsa (Guisado de Puerco con Tomatillos)"),
-                         Recipe("Stromboli", RecipeCatagory.pork, favorite = True, lastUsed = lastMonth),
-                         Recipe("Modenese Pork Chops"),
-                         Recipe("Orange Pork with Scallions"),
-                         Recipe("Easy Smoked Sausage Skillet", RecipeCatagory.pork),
-                         Recipe("Chipotle's Steak Marinade", RecipeCatagory.pork),
-                         Recipe("Chow Mein", RecipeCatagory.pork),
-                         Recipe("Pear and Pork Stir-Fry"),
-                         Recipe("Upside-Down Pizza", RecipeCatagory.pork),
-                         Recipe("Sweet and Sour Pork")])
 
-sampleBook.printByCatagory()
-print("")
+if __name__ == "__main__":
+    sampleBook = RecipeBook([Recipe("Pork Chops", RecipeCatagory.pork, True, yesterday),
+                             Recipe("Spaghetti", RecipeCatagory.groundBeef),
+                             Recipe("Baked Lasagna", RecipeCatagory.groundBeef),
+                             Recipe("Mushroom Meatballs", RecipeCatagory.groundBeef, True, lastUsed = today),
+                             Recipe("Sloppy Joes", RecipeCatagory.groundBeef, lastUsed = today),
+                             Recipe("Beef Ragu with Ravioli", RecipeCatagory.groundBeef),
+                             Recipe("Hamburger Cutlets", RecipeCatagory.groundBeef, True),
+                             Recipe("Chili con Carne", RecipeCatagory.groundBeef),
+                             Recipe("Spinach Pesto Manicotti", RecipeCatagory.groundBeef),
+                             Recipe("Tomato Meatloaf", RecipeCatagory.groundBeef, lastUsed = today),
+                             Recipe("Sloppy BBQ Joes", RecipeCatagory.groundBeef),
+                             Recipe("Meatball Garden Skillet", RecipeCatagory.groundBeef),
+                             Recipe("Sicilian Meat Roll", RecipeCatagory.groundBeef),
+                             Recipe("Mommy's Surprise", RecipeCatagory.groundBeef),
+                             Recipe("One-Pot Pasta", RecipeCatagory.groundBeef),
+                             Recipe("Beef & Macaroni Casserole", RecipeCatagory.groundBeef),
+                             Recipe("Somethin' Good", RecipeCatagory.groundBeef),
+                             Recipe("Chicken with Cider and Bacon Sauce", RecipeCatagory.groundBeef),
+                             Recipe("Goat Cheese Stuffed Chicken Breasts", RecipeCatagory.poultry, True),
+                             Recipe("Tandoori-Style Chicken", RecipeCatagory.poultry),
+                             Recipe("Prosciutto Chicken Cacciatore", RecipeCatagory.poultry),
+                             Recipe("Mexican Party Wings", RecipeCatagory.poultry),
+                             Recipe("Chicken in a Skillet"),
+                             Recipe("Turkey with a Twist"),
+                             Recipe("Stuffed Chicken Rolls", lastUsed = lastWeek),
+                             Recipe("Chicken Tetrazzini", favorite = True, lastUsed = lastMonth),
+                             Recipe("Chicken au Poivre"),
+                             Recipe("Baked Chicken with Orzo", favorite = True),
+                             Recipe("Chicken-Rice Casserole", lastUsed = lastMonth),
+                             Recipe("Asian Turkey Lettuce Wraps", favorite = True, lastUsed = yesterday),
+                             Recipe("Cornish Hens A'L'Orange", RecipeCatagory.poultry, lastUsed = today),
+                             Recipe("Pork Cacciatore", favorite = True),
+                             Recipe("Pork Stew"),
+                             Recipe("Pork Stew in Green Salsa (Guisado de Puerco con Tomatillos)"),
+                             Recipe("Stromboli", RecipeCatagory.pork, favorite = True, lastUsed = lastMonth),
+                             Recipe("Modenese Pork Chops"),
+                             Recipe("Orange Pork with Scallions"),
+                             Recipe("Easy Smoked Sausage Skillet", RecipeCatagory.pork),
+                             Recipe("Chipotle's Steak Marinade", RecipeCatagory.pork),
+                             Recipe("Chow Mein", RecipeCatagory.pork),
+                             Recipe("Pear and Pork Stir-Fry"),
+                             Recipe("Upside-Down Pizza", RecipeCatagory.pork),
+                             Recipe("Sweet and Sour Pork")])
 
-preferences = []
-while True:
-    if len(preferences) > 0:
-        print("Current Preferences:")
-        for i in range(len(preferenses)):
-            print(str(i + 1) + " " + str(preference))
-        print("")
+    sampleBook.printByCatagory()
     print("")
 
-week = sampleBook.getWeekRecipes()
-weekBook = RecipeBook(week)
-print("This week's dishes:")
-weekBook.printByCatagory()
-# for i in range(len(week)):
-#     print(str(i + 1) + " " + str(week[i]))
-# j = int(input("change selection (0 for no change): "))
-# if j != 0:
-#     if j > 0 and j < len(week):
-#         sampleBook.repickRecipeAtIndex(week, j - 1)
-# print("This week's dishes:")
-# for i in range(len(week)):
-#     print(str(i + 1) + " " + str(week[i]))
+    preferences = []
+    while True:
+        if len(preferences) > 0:
+            print("Current Preferences:")
+            for i in range(len(preferenses)):
+                print(str(i + 1) + " " + str(preference))
+            print("")
+        print("")
+
+    week = sampleBook.getWeekRecipes()
+    weekBook = RecipeBook(week)
+    print("This week's dishes:")
+    weekBook.printByCatagory()
+    # for i in range(len(week)):
+    #     print(str(i + 1) + " " + str(week[i]))
+    # j = int(input("change selection (0 for no change): "))
+    # if j != 0:
+    #     if j > 0 and j < len(week):
+    #         sampleBook.repickRecipeAtIndex(week, j - 1)
+    # print("This week's dishes:")
+    # for i in range(len(week)):
+    #     print(str(i + 1) + " " + str(week[i]))
